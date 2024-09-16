@@ -1,0 +1,31 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['**']
+    branches: ['main']
+    paths:
+      - src/**/*.ts
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          registry-url: https://npm.pkg.github.com
+          node-version-file: .nvmrc
+
+      - if: github.ref_type == 'branch'
+        run: npm pkg set "version=${{ format('0.0.0-next-{0}', github.sha) }}"
+
+      - run: npm publish --tag ${{ github.ref_type == 'tag' && 'latest' || 'next' }}
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
