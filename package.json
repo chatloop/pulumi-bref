@@ -2,7 +2,7 @@
   "name": "@chatloop/pulumi-bref",
   "description": "A Pulumi construct to deploy a Laravel application using brefphp",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     "src"
   ],
