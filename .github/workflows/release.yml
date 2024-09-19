@@ -4,9 +4,6 @@ on:
   workflow_dispatch:
   push:
     tags: ['**']
-    branches: ['main']
-    paths:
-      - src/**/*.ts
 
 jobs:
   publish:
