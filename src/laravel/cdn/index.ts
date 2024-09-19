@@ -26,6 +26,7 @@ type CDNArgs = {
     cert: pulumi.Input<string>,
   }
   name: string,
+  webAclId: pulumi.Input<string> | undefined,
   webFunctionUrl: pulumi.Output<string>,
 }
 
@@ -127,7 +128,8 @@ export class CDN extends pulumi.ComponentResource {
         acmCertificateArn: args.domain.cert,
         minimumProtocolVersion: 'TLSv1.2_2021',
         sslSupportMethod: 'sni-only',
-      }
+      },
+      webAclId: args.webAclId,
     });
   }
 
