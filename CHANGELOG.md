@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/chatloop/pulumi-bref/compare/v1.0.1...v1.1.0) (2024-09-19)
+
+
+### Features
+
+* support associating cdn to a waf ([#4](https://github.com/chatloop/pulumi-bref/issues/4)) ([63adb82](https://github.com/chatloop/pulumi-bref/commit/63adb82f4c490643ab67435bd6b7b446c955dc6b))
+
 ## [1.0.1](https://github.com/chatloop/pulumi-bref/compare/v1.0.0...v1.0.1) (2024-09-16)
 
 
