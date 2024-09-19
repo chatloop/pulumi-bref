@@ -13,7 +13,8 @@ type ComponentArgs = {
       name: Input<string>,
       aliases?: Input<string[]>,
       cert: Input<string>,
-    }
+    },
+    webAclId: Input<string> | undefined,
   },
   functions: {
     artisan: FunctionArgs,
@@ -60,6 +61,7 @@ export class BrefLaravel extends ComponentResource {
       comment: args.cdn.comment,
       domain: args.cdn.domain,
       name: args.name,
+      webAclId: args.cdn.webAclId,
       webFunctionUrl: webLambda.nodes.functionUrl.functionUrl,
     });
 
