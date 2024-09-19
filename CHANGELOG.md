@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/chatloop/pulumi-bref/compare/v1.1.0...v1.1.1) (2024-09-19)
+
+
+### Continuous Integration
+
+* disable releasing next version on main pushes ([#6](https://github.com/chatloop/pulumi-bref/issues/6)) ([0485627](https://github.com/chatloop/pulumi-bref/commit/0485627c92797e9f6a3477fe5d27b86731d44514))
+
 ## [1.1.0](https://github.com/chatloop/pulumi-bref/compare/v1.0.1...v1.1.0) (2024-09-19)
 
 
