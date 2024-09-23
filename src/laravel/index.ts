@@ -14,7 +14,7 @@ type ComponentArgs = {
       aliases?: Input<string[]>,
       cert: Input<string>,
     },
-    webAclId: Input<string> | undefined,
+    webAclId?: Input<string>,
   },
   functions: {
     artisan: FunctionArgs,
