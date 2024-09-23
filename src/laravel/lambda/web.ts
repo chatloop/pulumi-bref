@@ -13,7 +13,7 @@ export class WebLambda extends pulumi.ComponentResource {
   private readonly functionUrl: aws.lambda.FunctionUrl
 
   constructor(name: string, args: BrefFunctionArgs) {
-    super('bref:laravel:web', name, args);
+    super('bref:laravel:WebLambda', name, args);
 
     const region = aws.getRegionOutput();
 

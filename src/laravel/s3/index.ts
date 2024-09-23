@@ -6,7 +6,7 @@ export class AssetsBucket extends ComponentResource {
   private readonly bucket: aws.s3.BucketV2
 
   constructor(name: string, args: aws.s3.BucketV2Args) {
-    super('bref:laravel:assets', name, args);
+    super('bref:laravel:AssetsBucket', name, args);
 
     this.bucket = new aws.s3.BucketV2('Assets', {
       forceDestroy: true,

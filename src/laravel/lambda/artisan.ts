@@ -10,7 +10,7 @@ export class ArtisanLambda extends pulumi.ComponentResource {
   private readonly function: aws.lambda.Function;
 
   constructor(name: string, args: BrefFunctionArgs) {
-    super('bref:laravel:artisan', name, args);
+    super('bref:laravel:ArtisanLambda', name, args);
 
     const region = aws.getRegionOutput();
 

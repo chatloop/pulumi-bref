@@ -34,7 +34,7 @@ export class CDN extends pulumi.ComponentResource {
   private readonly distribution: aws.cloudfront.Distribution
 
   constructor(name: string, args: CDNArgs) {
-    super('bref:laravel:cdn', name, args);
+    super('bref:laravel:CDN', name, args);
 
     const originAccessControlLambda = new aws.cloudfront.OriginAccessControl('Lambda', {
       name: `${args.name}-lambda`,
