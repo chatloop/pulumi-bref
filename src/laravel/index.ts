@@ -31,7 +31,7 @@ export class BrefLaravel extends ComponentResource {
   private readonly cdn: CDN;
 
   constructor(name: string, args: ComponentArgs) {
-    super('bref:laravel', name, args);
+    super('bref:laravel:BrefLaravel', name, args);
 
     const archive = new Package('Code', {
       name: args.name,

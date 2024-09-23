@@ -9,7 +9,7 @@ export class Package extends pulumi.ComponentResource {
   private readonly bucketObject: aws.s3.BucketObjectv2
 
   constructor(name: string, args: { name: string, projectRoot: string }) {
-    super('bref:laravel:package', name, args);
+    super('bref:laravel:Package', name, args);
 
     const { projectRoot } = args;
 
