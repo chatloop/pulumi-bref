@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/chatloop/pulumi-bref/compare/v1.1.1...v1.1.2) (2024-09-23)
+
+
+### Bug Fixes
+
+* add missing module member delimiters ([#10](https://github.com/chatloop/pulumi-bref/issues/10)) ([e3faf75](https://github.com/chatloop/pulumi-bref/commit/e3faf75cb0a7b36d09a228c99c1040d64741104c))
+
 ## [1.1.1](https://github.com/chatloop/pulumi-bref/compare/v1.1.0...v1.1.1) (2024-09-23)
 
 
