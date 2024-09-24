@@ -1,7 +1,5 @@
 import * as pulumi from '@pulumi/pulumi';
 import * as aws from '@pulumi/aws';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 
 const asset = pulumi.asset;
 
@@ -13,7 +11,9 @@ export class Package extends pulumi.ComponentResource {
 
     const { projectRoot } = args;
 
-    const emptyDirAsset = new asset.FileArchive(`${dirname(fileURLToPath(import.meta.url))}/empty`);
+    const emptyDirAsset = new asset.AssetArchive({
+      '.gitkeep': new asset.StringAsset(''),
+    });
 
     this.bucketObject = new aws.s3.BucketObjectv2('Archive', {
       bucket: new aws.s3.Bucket('Code', {
