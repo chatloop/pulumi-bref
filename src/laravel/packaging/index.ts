@@ -12,7 +12,7 @@ export class Package extends pulumi.ComponentResource {
     const { projectRoot } = args;
 
     const emptyDirAsset = new asset.AssetArchive({
-      '.gitkeep': new asset.StringAsset(''),
+      '.gitkeep': new asset.StringAsset("\n"),
     });
 
     this.bucketObject = new aws.s3.BucketObjectv2('Archive', {
