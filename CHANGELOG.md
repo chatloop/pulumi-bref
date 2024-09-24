@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/chatloop/pulumi-bref/compare/v1.1.2...v1.1.3) (2024-09-24)
+
+
+### Bug Fixes
+
+* empty dir pathing issues when bundling with sst ([#12](https://github.com/chatloop/pulumi-bref/issues/12)) ([d703cc6](https://github.com/chatloop/pulumi-bref/commit/d703cc6a6d3fceeeb3b5737439d80990fe65264a))
+
 ## [1.1.2](https://github.com/chatloop/pulumi-bref/compare/v1.1.1...v1.1.2) (2024-09-23)
 
 
