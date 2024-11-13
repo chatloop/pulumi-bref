@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/chatloop/pulumi-bref/compare/v1.1.3...v1.1.4) (2024-11-13)
+
+
+### Continuous Integration
+
+* fix typo in release-please reverts type ([#14](https://github.com/chatloop/pulumi-bref/issues/14)) ([ce25ea4](https://github.com/chatloop/pulumi-bref/commit/ce25ea49f5bfc93a1bebd93a8fe0b5c5e3dd1274))
+
 ## [1.1.3](https://github.com/chatloop/pulumi-bref/compare/v1.1.2...v1.1.3) (2024-09-24)
 
 
